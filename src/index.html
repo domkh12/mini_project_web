@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Movie Love - Your ultimate destination for
+    movie reviews, TV show updates, upcoming releases, and more. Stay updated
+    with the latest in the entertainment world." />
+  <meta name="keywords"
+    content="movies, TV shows, upcoming releases, movie reviews, entertainment, Movie Love, film, cinema" />
+  <title>Movie Love</title>
+  <link rel="stylesheet" href="./output.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="bg-[#181818]">
+  <header>
+    <!-- nav start -->
+    <nav class="bg-slate-900 bg-opacity-50 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+      <ul class="navigation max-w-[100vw] flex justify-between items-center relative sm:mx-4 xl:mx-24 py-4">
+        <a class="logo" href="index.html">
+          <h3 class="font-bold text-amber-400 md:text-xl sm:text-2xl lg:text-2xl ">Movie Love</h3>
+        </a>
+        <input type="checkbox" id="check" />
+  
+        <span class="menu text-white flex [&>li]:pl-8 [&>li>a]:text-center [&>li>a]:relative [&>li>a]:transition [&>li>a]:duration-200 [&>li>a]:ease-in-out [&>li>a]:font-normal [&>li>a]:text-lg md:text-sm">
+          <li class="hover:text-amber-400 text-amber-400"><a href="index.html">Home</a></li>
+          <li class="hover:text-amber-400"><a href="tvshow.html">Tv Show</a></li>
+          <li class="hover:text-amber-400"><a href="upcoming.html">Upcoming</a></li>
+          <li class="hover:text-amber-400"><a href="aboutus.html">About Us</a></li>          
+          
+          <label for="check" class="close-menu"><i class="fa-solid fa-xmark text-white text-3xl"></i></label>
+        </span>
+        <div class="flex justify-between items-center gap-5">
+          <div class="relative w-full">
+            <svg class="w-6 h-6 ml-3 text-gray-700 absolute top-2 left-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        <input type="search" placeholder="Search Movie" class="h-10 rounded-3xl border-b-2 w-full  border-gray-200 py-3 pl-10 focus:ring-0 ring-0 focus:border-none border-none">
+        </div>
+          <a href="login.html" class="h-10 sm:mr-20 xl:mr-0 flex justify-center items-center bg-white text-slate-900 py-2 px-10 rounded-full hover:bg-slate-200 text-center">
+            Login
+          </a>
+        </div>
+        <label for="check" class="open-menu"><i class="fa-solid fa-bars text-3xl text-white"></i></label>
+      </ul>
+    </nav>
+    <!-- nav end -->
+  </header>
+  <main>
+    <!-- hero start -->
+    <section class="h-screen sm:flex-col sm:mx-4 md:items-start xl:mx-24 sm:justify-center sm:items-center sm:gap-9 flex justify-between">
+      <img id="hero-img" src="../images/img1.jpg" class="sm:object-cover md:w-full md:object-cover md:h-screen sm:h-screen saturate-150 absolute top-0 left-0 " alt="">
+      <div class="sm:flex md:w-[100%] lg:w-[80%] xl:w-[40%] sm:gap-5 saturate-150 z-10 flex justify-center items-baseline flex-col sm:w-full">
+        <h1 class="text-white font-metal_mania md:text-[60px] sm:text-5xl">
+          RAYA AND THE LAST DRAGON
+        </h1>
+        <p class="text-white  font-poppins mt-1">
+          A quest to save her world.
+          <span class="text-green-300">Mar. 03, 2021 USA.</span>
+        </p>
+        <p class="text-white  font-poppins">
+          it is a long established fact that a reader will be distracted by
+          the readable content of a page when looking at its layout. The point
+          of using Lorem Ipsum is that it have more-or-less norma5
+          distribution of letters
+        </p>
+        <!-- star rating -->
+        <div class="flex justify-center items-center space-x-4">
+          <div class="flex gap-1">
+            <i class="fa fa-star text-yellow-500"></i>
+            <i class="fa fa-star text-yellow-500"></i>
+            <i class="fa fa-star text-yellow-500"></i>
+            <i class="fa fa-star text-yellow-500"></i>
+            <!-- star rating -->
+            <i class="fa-regular fa-star text-white"></i>
+          </div>
+          <p class="text-white font-poppins">8.0 RATING</p>
+        </div>
+        <div class="flex justify-center items-center space-x-5">
+          <button type="button" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-16 rounded-full font-poppins">
+            PLAY
+          </button>
+          <i class="fa-solid fa-plus text-white ml-3 border p-1 rounded-full"></i>
+        </div>
+      </div>
+
+      <div class="saturate-150 flex md:px-0 flex-col sm:self-center md:self-end sm:px-10 gap-5">
+        <div class="flex gap-4">
+          <div id="img1"
+            class="md:w-40 md:h-24 sm:w-24 sm:h-16 brightness-50 hover:scale-110 transition-all hover:brightness-100 hover:outline hover:outline-white rounded-lg">
+            <img src="../images/img1.jpg" class="rounded-lg sm:h-16 sm:w-24 md:w-40 md:h-24 object-cover" alt="" />
+          </div>
+          <div id="img2"
+            class="hover:scale-110 md:w-40 md:h-24 sm:w-24 sm:h-16 transition-all hover:outline brightness-50 hover:outline-white hover:brightness-100 rounded-lg">
+            <img src="../images/img2.jpg" class="rounded-lg md:w-40 sm:w-24 sm:h-16 md:h-24 object-cover" alt="" />
+          </div>
+          <div id="img3"
+            class="md:w-40 md:h-24 sm:h-16 sm:w-24 hover:scale-110 transition-all hover:outline brightness-50 hover:outline-white hover:brightness-100 rounded-lg">
+            <img src="../images/img5.jpg" class="rounded-lg md:w-40 sm:h-16 md:h-24 object-cover" alt="" />
+          </div>
+          <div id="img4"
+            class="md:w-40 sm:w-24 sm:h-16 md:h-24 hover:scale-110 transition-all hover:outline brightness-50 hover:outline-white hover:brightness-100 rounded-lg">
+            <img src="../images/img4.jpg" class="rounded-lg md:w-40 sm:h-16 md:h-24 object-cover" alt="" />
+          </div>
+          <div id="img5"
+            class="md:w-40 sm:w-24 sm:h-16 md:h-24 transition-all brightness-50 hover:scale-110 hover:outline hover:outline-white hover:brightness-100 rounded-lg">
+            <img src="../images/img6.jpg" class="rounded-lg md:w-40 sm:h-16 md:h-24 object-cover" alt="" />
+          </div>
+        </div>
+        <div class="flex justify-center items-center gap-3">
+          <div id="bar-left" class="w-14 sm:w-10 h-1 bg-white  rounded-full"></div>
+          <div id="bar-mid" class="w-14 sm:w-10 h-1 bg-slate-500 rounded-full"></div>
+          <div id="bar-right" class="w-14 sm:w-10 h-1 bg-slate-500 rounded-full"></div>
+        </div>
+      </div>
+    </section>
+    <!-- hero end -->
+    <!-- most view start-->
+    <section class="font-poppins sm:py-5 sm:h-full">
+      <!-- button category start -->
+      <div class="sm:mx-10 xl:mx-24 sm:flex-wrap sm:gap-6 mt-10 flex mr-24 xl:justify-between xl:items-center">
+        <button type="button"
+          class="bg-amber-400 text-[#181818] py-2 px-16 xl:w-60 sm:w-40 text-center rounded-full border-[#181818]">
+          ALL
+        </button>
+        <button type="button"
+          class="text-white flex justify-center items-center border-2 border-white sm:w-40 hover:bg-amber-400 hover:text-[#181818] hover:border-[#181818] py-2 xl:w-60 text-center px-16 rounded-full">
+          Action
+        </button>
+        <button type="button"
+          class="text-white flex justify-center items-center border-2 border-white sm:w-40 hover:bg-amber-400 hover:text-[#181818] hover:border-[#181818] py-2 xl:w-60 text-center px-16 rounded-full">
+          Comedy
+        </button>
+        <button type="button"
+          class="text-white flex justify-center items-center border-2 border-white sm:w-40 hover:bg-amber-400 hover:text-[#181818] hover:border-[#181818] py-2 xl:w-60 text-center px-16 rounded-full">
+          Series
+        </button>
+        <button type="button"
+          class="text-white flex justify-center items-center border-2 border-white sm:w-40 hover:bg-amber-400 hover:text-[#181818] hover:border-[#181818] py-2 xl:w-60 text-center px-16 rounded-full">
+          Adventure
+        </button>
+        <button type="button"
+          class="text-white flex justify-center items-center border-2 border-white sm:w-40 hover:bg-amber-400 hover:text-[#181818] hover:border-[#181818] py-2 xl:w-60 text-center px-16 rounded-full">
+          Other
+        </button>
+        <a href="" class="sm:hidden lg:block">
+          <i
+            class=" fa-solid fa-arrow-right text-white border p-2 rounded-full hover:text-amber-400 hover:border-amber-400"></i>
+        </a>
+      </div>
+      <!-- button category end -->
+      <!-- most view card start -->
+      <div>
+        <p class="text-white sm:mx-10 mt-10 xl:mx-24 text-2xl font-semibold">Most Viewed</p>
+
+        <div class="sm:flex-wrap saturate-150 sm:mx-10 xl:mx-24 mt-10 mr-24 flex sm:justify-center sm:gap-7 xl:gap-0 xl:items-center xl:justify-between">
+          <div class="xl:w-64 sm:w-40">
+            <div class="overflow-hidden rounded-2xl hover:outline hover:outline-white transition-all mb-3">
+              <img src="../images/img7.jpg"
+                class="xl:w-64 sm:w-40 rounded-2xl hover:outline hover:scale-105 hover:transition-all xl:h-96 sm:h-52 object-cover" alt="" />
+            </div>
+            <p class="text-white text-center px-2">
+              Mavka: The Forest Song (2023) Mar. 02, 2023
+            </p>
+          </div>
+          <div class="xl:w-64 sm:w-40">
+            <div class="overflow-hidden rounded-2xl hover:outline hover:outline-white transition-all mb-3">
+              <img src="../images/img8.png" class="xl:w-64 rounded-2xl
+              hover:outline hover:scale-105 hover:transition-all xl:h-96 sm:h-52 object-cover" alt="" />
+            </div>
+            <p class="text-white text-center px-2">
+              Tom Clancy's Jack Ryan: Season 1-4 Dual Audio.
+            </p>
+          </div>
+          <div class="xl:w-64 sm:w-40">
+            <div class="overflow-hidden rounded-2xl hover:outline hover:outline-white transition-all mb-3">
+              <img src="../images/img9.jpg" class="xl:w-64 sm:w-full rounded-2xl
+              hover:outline hover:scale-105 hover:transition-all xl:h-96 sm:h-52 object-cover" alt="" />
+            </div>
+            <p class="text-white text-center px-2">
+              The Boss Baby: Back in the Crib: Season 1-2
+            </p>
+          </div>
+          <div class="xl:w-64 sm:w-40">
+            <div class="overflow-hidden rounded-2xl hover:outline hover:outline-white transition-all mb-3">
+              <img src="../images/img10.png" class="xl:w-64 rounded-2xl
+              hover:outline hover:scale-105 hover:transition-all sm:w-full xl:h-96 sm:h-52 object-cover" alt="" />
+            </div>
+            <p class="text-white text-center px-2">
+              Bird Box Barcelona
+              (2023) Jul, 14, 2023
+            </p>
+          </div>
+          <div class="xl:w-64 sm:w-40">
+            <div class="overflow-hidden rounded-2xl hover:outline hover:outline-white transition-all mb-3">
+              <img src="../images/img11.jpg" class="sm:w-full xl:w-64 rounded-2xl
+              hover:outline hover:scale-105 hover:transition-all xl:h-96 sm:h-52 object-cover" alt="" />
+            </div>
+            <p class="text-white text-center px-2">
+              Day Shift (2022) Dua
+              Audio Aug, 12, 2022
+            </p>
+          </div>
+          <div class="xl:w-64 sm:w-40">
+            <div class="overflow-hidden rounded-2xl hover:outline hover:outline-white transition-all mb-3">
+              <img src="../images/img12.jpg" class="rounded-2xl
+              hover:outline hover:scale-105 hover:transition-all xl:w-64 xl:h-96 sm:w-full sm:h-52 object-cover" alt="" />
+            </div>
+            <p class="text-white text-center px-2">
+              Sonic Prime: 2022
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- most view card end -->
+      </div>
+    </section>
+    <!-- most view end-->
+    <!-- second hero start -->
+    <section class="saturate-150 sm:my-5 sm:h-screen sm:flex-col sm:gap-10 sm:items-center sm:justify-center xl:flex-row xl:justify-between sm:flex">
+      <img src="../images/img13.png" class="sm:object-cover xl:w-screen xl:h-screen sm:h-screen saturate-150 absolute top-0 bg-cover left-0 " alt="">
+      <div class="sm:gap-6 sm:z-10 flex sm:mx-10 xl:mx-24 sm:items-start flex-col  xl:w-96">
+        <h1 class="text-white sm:text-5xl font-metal_mania text-[60px]">
+          Black Adam
+        </h1>
+        <!-- star rating -->
+        <div class="flex justify-center items-center space-x-4 mt-1">
+          <div class="flex gap-1">
+            <i class="fa fa-star text-yellow-500"></i>
+            <i class="fa fa-star text-yellow-500"></i>
+            <i class="fa fa-star text-yellow-500"></i>
+            <i class="fa fa-star text-yellow-500"></i>
+            <!-- star rating -->
+            <i class="fa-regular fa-star text-white"></i>
+          </div>
+          <p class="text-white font-poppins">IMDb 8.1</p>
+        </div>
+        <p class="text-white mb-6 font-poppins">
+          Shazam | Death Adam (2022) Nearly 5,000 years after he was bestowed with the almighty power of the Egyptian
+          gods-and imprisoned just as quickly-Black Adam is freed from his earthly tomb, ready to unleash his unique
+          form of justice on the modern world.
+        </p>
+
+        <div class="flex justify-center items-center space-x-5">
+          <button type="button" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-16 rounded-full font-poppins">
+            PLAY
+          </button>
+          <i class="fa-solid fa-plus text-white ml-3 border p-1 rounded-full"></i>
+        </div>
+      </div>
+
+      <div class="sm:z-10 sm:justify-center xl:mx-24 xl:flex-col sm:items-center gap-4 flex sm:flex-row flex-col justify-center items-center">
+        <div
+          class="xl:w-72 xl:h-40 sm:w-52 sm:h-32 hover:scale-110 transition-all hover:brightness-125 hover:outline hover:outline-white rounded-lg">
+          <img src="../images/img14.png" class="sm:h-32 rounded-lg xl:w-72 xl:h-40 object-cover" alt="" />
+        </div>
+        <div class="xl:w-72 xl:h-40 sm:w-52 sm:h-32 hover:scale-110 transition-all hover:outline hover:outline-white hover:brightness-125 rounded-lg">
+          <img src="../images/img15.png" class="sm:h-32 rounded-lg xl:w-72 xl:h-40 object-cover" alt="" />
+        </div>
+        <div
+          class="xl:w-72 xl:h-40 sm:w-52 sm:h-32 w-72 hover:scale-110 transition-all hover:outline hover:outline-white hover:brightness-125 rounded-lg">
+          <img src="../images/img16.png" class="sm:h-32 rounded-lg xl:w-72 xl:h-40 object-cover" alt="" />
+        </div>
+      </div>
+
+    </section>
+    <!-- second hero start -->
+    <!-- most popular 1 start -->
+    <section class="sm:h-full">
+      <div>
+        <div class="flex justify-between items-center mr-24 mt-10">
+          <p class="text-white ml-24  text-2xl font-semibold">Most Popular</p>
+
+          <a href="" class="flex items-center justify-center gap-4">
+            <p class="text-white text-xl">View all</p>
+            <i
+              class="fa-solid fa-arrow-right hover:text-amber-400 hover:border-amber-400 text-white border p-2 rounded-full"></i>
+          </a>
+        </div>
+        <div class="sm:flex-wrap saturate-150 sm:mx-10 xl:mx-24 mt-10 mr-24 flex sm:justify-center sm:gap-7 xl:gap-0 xl:items-start xl:justify-between">
+          <div class="xl:w-64 sm:w-40">
+            <div class="overflow-hidden rounded-2xl hover:outline hover:outline-white transition-all mb-3">
+              <img src="../images/img21.png"
+                class="rounded-2xl hover:outline hover:scale-105 hover:transition-all xl:h-96 sm:w-full sm:h-52 object-cover" alt="" />
+            </div>
+            <p class="text-white text-center px-2">
+              John Wick: Chapter 4
+              (2023) Mar. 22, 2023
+            </p>
+          </div>
+          <div class="xl:w-64 sm:w-40">
+            <div class="overflow-hidden rounded-2xl hover:outline hover:outline-white transition-all mb-3">
+              <img src="../images/img22.jpg" class="rounded-2xl
+              hover:outline hover:scale-105 hover:transition-all xl:h-96 sm:w-full sm:h-52 object-cover" alt="" />
+            </div>
+            <p class="text-white text-center px-2">
+              Kohrra : Season 1 Dual
+              Audio
+            </p>
+          </div>
+          <div class="xl:w-64 sm:w-40">
+            <div class="overflow-hidden rounded-2xl hover:outline hover:outline-white transition-all mb-3">
+              <img src="../images/img23.jpg" class="rounded-2xl
+              hover:outline hover:scale-105 hover:transition-all xl:h-96 sm:w-full sm:h-52 object-cover" alt="" />
+            </div>
+            <p class="text-white text-center px-2">
+              Avatar: The Way of
+              Water (2022) Dec. 14,
+              2022
+            </p>
+          </div>
+          <div class="xl:w-64 sm:w-40">
+            <div class="overflow-hidden rounded-2xl hover:outline hover:outline-white transition-all mb-3">
+              <img src="../images/img24.png" class="rounded-2xl
+              hover:outline hover:scale-105 hover:transition-all xl:h-96 sm:w-full sm:h-52 object-cover" alt="" />
+            </div>
+            <p class="text-white text-center px-2">
+              The New Liaozhai
+              Legend: The Male Fox
+              (2021)
+            </p>
+          </div>
+          <div class="xl:w-64 sm:w-40">
+            <div class="overflow-hidden rounded-2xl hover:outline hover:outline-white transition-all mb-3">
+              <img src="../images/img25.jpg" class="rounded-2xl
+              hover:outline hover:scale-105 hover:transition-all xl:h-96 sm:w-full sm:h-52 object-cover" alt="" />
+            </div>
+            <p class="text-white text-center px-2">
+              Foundation: Season 2
+              WEB-DL 720p & 1080P
+              HEVC | [Epi 1 Added]
+            </p>
+          </div>
+          <div class="xl:w-64 xl:h-96 sm:w-40">
+            <div class="overflow-hidden rounded-2xl hover:outline hover:outline-white transition-all mb-3">
+              <img src="../images/img26.png" class="rounded-2xl
+              hover:outline hover:scale-105 hover:transition-all xl:h-96 sm:w-full sm:h-52 object-cover" alt="" />
+            </div>
+            <p class="text-white text-center px-2">
+              Wanted (2008 film)
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- most popular 1 end -->
+    <!-- most popular 2 start -->
+    <section>
+      <div>
+        <div class="flex justify-between items-center mr-24 mt-10">
+          <p class="text-white ml-24  text-2xl font-semibold">Most Popular</p>
+
+          <a href="" class="flex items-center justify-center gap-4">
+            <p class="text-white text-xl">View all</p>
+            <i
+              class="fa-solid fa-arrow-right hover:text-amber-400 hover:border-amber-400 text-white border p-2 rounded-full"></i>
+          </a>
+        </div>
+        <div class="sm:flex-wrap saturate-150 sm:mx-10 xl:mx-24 mt-10 mr-24 flex sm:justify-center sm:gap-7 xl:gap-0 xl:items-start xl:justify-between">
+          <div class="xl:w-64 sm:w-40">
+            <div class="overflow-hidden rounded-2xl hover:outline hover:outline-white transition-all mb-3">
+              <img src="../images/img27.png"
+                class="rounded-2xl hover:outline xl:h-96 sm:w-full sm:h-52 hover:scale-105 hover:transition-all h-96 object-cover" alt="" />
+            </div>
+            <p class="text-white text-center px-2">
+              Janaki Jaane (2023) Dual
+              Audio. May. 12, 2023
+            </p>
+          </div>
+          <div class="xl:w-64 sm:w-40">
+            <div class="overflow-hidden rounded-2xl hover:outline hover:outline-white transition-all mb-3">
+              <img src="../images/img28.png" class="rounded-2xl
+              hover:outline xl:h-96 sm:w-full sm:h-52 hover:scale-105 hover:transition-all h-96 object-cover" alt="" />
+            </div>
+            <p class="text-white text-center px-2">
+              Zoom (2006) AMZN
+              Aug. 11, 2006
+            </p>
+          </div>
+          <div class="xl:w-64 sm:w-40">
+            <div class="overflow-hidden rounded-2xl hover:outline hover:outline-white transition-all mb-3">
+              <img src="../images/img29.jpg" class="rounded-2xl
+              hover:outline xl:h-96 sm:w-full sm:h-52 hover:scale-105 hover:transition-all h-96 object-cover" alt="" />
+            </div>
+            <p class="text-white text-center px-2">
+              She-Hulk: Attorney at
+              Law : Season 1
+            </p>
+          </div>
+          <div class="xl:w-64 sm:w-40">
+            <div class="overflow-hidden rounded-2xl hover:outline hover:outline-white transition-all mb-3">
+              <img src="../images/img23.jpg" class="rounded-2xl
+              hover:outline xl:h-96 sm:w-full sm:h-52 hover:scale-105 hover:transition-all h-96 object-cover" alt="" />
+            </div>
+            <p class="text-white text-center px-2">
+              Avatar: The Way of
+              Water (2022) Dec. 14,
+              2022
+            </p>
+          </div>
+          <div class="xl:w-64 sm:w-40">
+            <div class="overflow-hidden rounded-2xl hover:outline hover:outline-white transition-all mb-3">
+              <img src="../images/img30.jpg" class="rounded-2xl
+              hover:outline xl:h-96 sm:w-full sm:h-52 hover:scale-105 hover:transition-all h-96 object-cover" alt="" />
+            </div>
+            <p class="text-white text-center px-2">
+              Godzilla vs. Kong (2021)
+              Dual Audio Mar. 24, 2021
+            </p>
+          </div>
+          <div class="xl:w-64 sm:w-40">
+            <div class="overflow-hidden rounded-2xl hover:outline hover:outline-white transition-all mb-3">
+              <img src="../images/img26.png" class="rounded-2xl
+              hover:outline xl:h-96 sm:w-full sm:h-52 hover:scale-105 hover:transition-all h-96 object-cover" alt="" />
+            </div>
+            <p class="text-white text-center px-2">
+              Wanted (2008 film)
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- most popular 2 end -->
+    <!-- third hero start -->
+    <p class="text-white font-poppins text-center xl:text-[80px] sm:text-[40px] font-semibold mt-14">Popular Tv Series</p>
+    <section 
+      class="saturate-150 xl:justify-between sm:justify-center sm:gap-10 xl:items-center xl:flex-row sm:flex-col h-screen w-full mt-14 flex ">
+      <img id="img-hero3" src="../images/img17.jpg" class="sm:object-cover xl:w-screen xl:h-screen sm:h-screen saturate-150 absolute top-0 bg-cover left-0 " alt="">
+      <div class="z-10 sm:mx-10 flex xl:mx-24 justify-center items-baseline flex-col xl:h-full xl:w-96">
+        <h1 id="title-hero3" class="text-white font-metal_mania text-[60px]">
+          The Flash : Season 9
+        </h1>
+        <!-- star rating -->
+        <div class="flex justify-center items-center space-x-4 mb-5 mt-1">
+          <div class="flex gap-1">
+            <i class="fa fa-star text-yellow-500"></i>
+            <i class="fa fa-star text-yellow-500"></i>
+            <i class="fa fa-star text-yellow-500"></i>
+            <i class="fa fa-star text-yellow-500"></i>
+            <!-- star rating -->
+            <i class="fa-regular fa-star text-white"></i>
+          </div>
+          <p class="text-white font-poppins">IMDb 8.1</p>
+        </div>
+        <p id="description-hero3" class="text-white mb-6 font-poppins">
+          After being struck by lightning, Barry Allen Wakes up from his coma to discover he’s been given the power of
+          super speed, becoming the next Flash, fighting crime in Central City.
+        </p>
+
+        <div class="flex justify-center items-center space-x-5">
+          <button type="button" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-16 rounded-full font-poppins">
+            PLAY
+          </button>
+          <i class="fa-solid fa-plus text-white ml-3 border p-1 rounded-full"></i>
+        </div>
+      </div>
+
+      <div class="z-10 gap-4 flex xl:flex-col xl:mx-24 sm:flex-row justify-center items-center sm:mx-10">
+        <div class="cursor-pointer  transition-all rounded-lg">
+          <img id="img1-hero3" src="../images/img19.jpg" class="rounded-lg sm:w-56 sm:h-36 xl:w-80 xl:h-48 object-cover" alt="" />
+        </div>
+        <div class="cursor-pointer  transition-all  rounded-lg">
+          <img id="img2-hero3" src="../images/img18.jpg" class="rounded-lg sm:w-56 sm:h-36 xl:w-80 xl:h-48 object-cover" alt="" />
+        </div>
+        <div class="cursor-pointer  transition-all  rounded-lg">
+          <img id="img3-hero3" src="../images/img20.jpg" class="rounded-lg sm:w-56 sm:h-36 xl:w-80 xl:h-48 object-cover" alt="" />
+        </div>
+      </div>
+
+    </section>
+    <!-- third hero end -->
+    <!-- last card start -->
+    <section>
+      <div>
+        <div class=" ml-24 mr-24 mt-10">
+          <a href="" class="flex items-center justify-end gap-4">
+            <p class="text-white text-xl">View all</p>
+            <i
+              class="fa-solid fa-arrow-right hover:text-amber-400 hover:border-amber-400 text-white border p-2 rounded-full"></i>
+          </a>
+        </div>
+        <div class="sm:flex-wrap saturate-150 sm:mx-10 xl:mx-24 mt-10 mr-24 flex sm:justify-center sm:gap-7 xl:gap-0 xl:items-start xl:justify-between">
+          <div class="xl:w-64 sm:w-40">
+            <div class="overflow-hidden rounded-2xl hover:outline hover:outline-white transition-all mb-3">
+              <img src="../images/img31.png"
+                class="rounded-2xl xl:h-96 sm:w-full sm:h-52 hover:outline hover:scale-105 hover:transition-all h-96 object-cover" alt="" />
+            </div>
+            <p class="text-white text-center px-2">
+              Stranger Things : Season
+              1-3 Dual Audio
+            </p>
+          </div>
+          <div class="xl:w-64 sm:w-40">
+            <div class="overflow-hidden rounded-2xl hover:outline hover:outline-white transition-all mb-3">
+              <img src="../images/img32.png" class="rounded-2xl
+              hover:outline xl:h-96 sm:w-full sm:h-52 hover:scale-105 hover:transition-all h-96 object-cover" alt="" />
+            </div>
+            <p class="text-white text-center px-2">
+              The Boy : Season 3 Dual
+              Audio
+            </p>
+          </div>
+          <div class="xl:w-64 sm:w-40">
+            <div class="overflow-hidden rounded-2xl hover:outline hover:outline-white transition-all mb-3">
+              <img src="../images/img29.jpg" class="rounded-2xl
+              hover:outline xl:h-96 sm:w-full sm:h-52 hover:scale-105 hover:transition-all h-96 object-cover" alt="" />
+            </div>
+            <p class="text-white text-center px-2">
+              She-Hulk: Attorney at
+              Law : Season 1
+            </p>
+          </div>
+          <div class="xl:w-64 sm:w-40">
+            <div class="overflow-hidden rounded-2xl hover:outline hover:outline-white transition-all mb-3">
+              <img src="../images/img33.png" class="rounded-2xl
+              hover:outline xl:h-96 sm:w-full sm:h-52 hover:scale-105 hover:transition-all h-96 object-cover" alt="" />
+            </div>
+            <p class="text-white text-center px-2">
+              GOT - Game of Thrones :
+              Dual Audio
+              2022
+            </p>
+          </div>
+          <div class="xl:w-64 sm:w-40">
+            <div class="overflow-hidden rounded-2xl hover:outline hover:outline-white transition-all mb-3">
+              <img src="../images/img34.png" class="rounded-2xl
+              hover:outline xl:h-96 sm:w-full sm:h-52 hover:scale-105 hover:transition-all h-96 object-cover" alt="" />
+            </div>
+            <p class="text-white text-center px-2">
+              1899: Season 1 Dual/
+              Multi Audio
+            </p>
+          </div>
+          <div class="xl:w-64 sm:w-40">
+            <div class="overflow-hidden rounded-2xl hover:outline hover:outline-white transition-all mb-3">
+              <img src="../images/img26.png" class="rounded-2xl
+              hover:outline xl:h-96 sm:w-full sm:h-52 hover:scale-105 hover:transition-all h-96 object-cover" alt="" />
+            </div>
+            <p class="text-white text-center px-2">
+              Wanted (2008 film)
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- last card end -->
+  </main>
+  <footer>
+    <section class="flex justify-between mx-24 my-10 font-poppins">
+      <a href="index.html" class="text-xl text-amber-400 ">Movie Love</a>
+      <div class="flex justify-between items-center gap-10">
+        <p class="text-xl text-amber-400 ">Follow Us on:</p>
+        <div class="flex gap-7">
+          <!-- icon facebook -->
+          <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f text-amber-400 text-2xl
+        hover:text-white hover:transition-all"></i></a>
+          <!-- icon google -->
+          <a href="https://www.google.com/"><i class="fa-brands fa-google text-amber-400 text-2xl
+        hover:text-white hover:transition-all"></i></a>
+          <!-- icon twitter -->
+          <a href="https://twitter.com/"><i class="fa-brands fa-twitter text-amber-400 text-2xl
+        hover:text-white hover:transition-all"></i></a>
+        </div>
+      </div>
+    </section>
+    <hr class="mx-24">
+    <section class="flex sm:justify-evenly md:justify-center md:gap-10 2xl:gap-60 sm:my-10 font-poppins">
+      <div class="sm:gap-10 sm:flex sm:flex-col 2xl:gap-60 md:flex-row">
+      <div class="leading-8">
+        <h2 class=" text-xl text-amber-400">Movie</h2>
+        <p class="text-white hover:text-amber-400">Action</p>
+        <p class="text-white hover:text-amber-400">Comedy</p>
+        <p class="text-white hover:text-amber-400">Horror</p>
+        <p class="text-white hover:text-amber-400">Animation</p>
+        <p class="text-white hover:text-amber-400">Fantacy</p>
+      </div>
+      <div class="leading-8">
+        <h2 class=" text-xl text-amber-400">Series</h2>
+        <p class="text-white hover:text-amber-400">Reality Shows</p>
+        <p class="text-white hover:text-amber-400">Classic Shows</p>
+        <p class="text-white hover:text-amber-400">Valentine Day</p>
+        <p class="text-white hover:text-amber-400">Comedy</p>
+        <p class="text-white hover:text-amber-400">Fantacy</p>
+      </div>
+    </div>
+    <div class="sm:gap-10 sm:flex sm:flex-col md:flex-row 2xl:gap-60">
+      <div class="leading-8">
+        <h2 class=" text-xl text-amber-400">Support</h2>
+        <p class="text-white hover:text-amber-400">General Info</p>
+        <p class="text-white hover:text-amber-400">Privacy Policy</p>
+        <p class="text-white hover:text-amber-400">Terms of service</p>
+        <p class="text-white hover:text-amber-400">Animation</p>
+        <p class="text-white hover:text-amber-400">Help Center</p>
+      </div>
+      <div class="leading-8">
+        <h2 class=" text-xl text-amber-400">Contact</h2>
+        <p class="text-white hover:text-amber-400">chanudomei122@gmail.com</p>
+        <p class="text-white hover:text-amber-400">Tel : 0977345470</p>
+      </div>
+    </div>
+    </section>
+  </footer>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/c3a6b79c4e.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
